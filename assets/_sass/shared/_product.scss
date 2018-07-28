@@ -9,15 +9,21 @@
   img {
     margin: auto;
     display: block;
+    height: 350px;
+    width: 300px;
   }
 
   .details {
     @include row;
+    height: 75px;
+    width: 300px;
+    font-size: 20px;
     background: #EDEDED;
-    padding: 5px 5px;
+    padding: 15px 15px 15px 15px;
     border-radius: 5px;
     box-shadow: 0 0 10px 10px #C3C3C3;
     margin-top: 10px;
+    margin-bottom: 50px;
     color: #666;
     & > div { @include span-columns(1 of 2); }
     &.added { background: #D7F7D1; }
@@ -33,7 +39,7 @@
   .add {
     @extend .fa, .fa-plus;
     color: #B2D0FF;
-  
+
   }
 
   i.added {

@@ -19,10 +19,11 @@
   $horizontal-bar-mode: $large-screen;
 
   background-color: #FFFFFF;
-  border-bottom: 5px solid #F5F5F5;
+  box-shadow: 0 0 10px 10px #C3C3C3;
   min-height: $nav-height;
   width: 100%;
   z-index: 9999;
+
 
   #mobile-logo {
     display: inline;
@@ -34,6 +35,7 @@
       max-height: $nav-height;
       opacity: .6;
       padding: .8em 0;
+  
     }
 
     @include media($horizontal-bar-mode) {
@@ -74,7 +76,7 @@
     -webkit-transform-style: preserve-3d; // stop webkit flicker
     clear: both;
     display: none;
-    margin: 0 auto;
+    margin-top: 25px;
     overflow: visible;
     padding: 0;
     width: 100%;
@@ -101,6 +103,7 @@
     text-align: right;
     width: 100%;
     z-index: 9999;
+
 
     a {
       color: $nav-color;

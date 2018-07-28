@@ -12,21 +12,17 @@ layout: default
       <span itemprop='price' content='{{ page.price }}'>{{ page.price }}</span>
     </h3>
   </header>
-  <div class='row'>
-    <h3>Description: {{ page.description }}</h3>
+  <div class='row'/>
+    <h3 style= 'width: 500px;' >Description: {{ page.description }}</h3>
 
     <aside>
-      <img src='{{ site.baseurl }}/images/{{ page.image }}'
+      <img style= 'width: 400px;' src='{{ site.baseurl }}/images/{{ page.image }}'
             alt='{{ page.name }}'
             itemprop='image'/>
-      <table>
+      <table class="border">
         <tr>
           <th>Price</th>
-          <td>{{ page.price }}</td>
-        </tr>
-        <tr>
-          <th>Type</th>
-          <td>{{ page.type }}</td>
+          <td>${{ page.price }}.00</td>
         </tr>
         <tr>
           <th>Condition</th>
@@ -35,6 +31,10 @@ layout: default
         <tr>
           <th>Designer</th>
           <td itemprop='itemCondition'>{{ page.designer }}</td>
+        </tr>
+        <tr>
+          <th>Type</th>
+          <td>{{ page.type }}</td>
         </tr>
         <tr>
           <th>Additional Info</th>

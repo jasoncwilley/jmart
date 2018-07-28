@@ -2,7 +2,7 @@ title: Electric HoneyBee Studios
 description: 'Just Another Jekyll-Store clone dubbed Electric HoneyBee Studios'
 email: ElectricHoneybee@gmail.com
 
-baseurl: 'https://jmart1.herokuapp.com/'
+baseurl: ''
 api_key: 'ODVhMzJmYTItYzMzNi00OGMwLTk0MjUtOWQ5NWQ2YTVkN2YzNjM2MjIyMzc2MTY3NTI5Nzc5'
 
 # Jekyll-Store Engine

@@ -1,14 +1,14 @@
 ---
-name: oaklandsunset
+name: Little5Points
 price: 185
-slug: oaklandsunset
+slug: little5points
 weight: 3.66
 designer: Birgers Oterutleie
 type: Jewelry
 condition: New
-image: 'oaklandsunset.jpg'
-big_image: 'oaklandsunset.jpg'
-slug: waterhover
+image: 'Atlanta.jpeg'
+big_image: 'Atlanta.jpeg'
+slug: little5points
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 addinfo: Here is some additional info.  It's pretty useful info.  Makes you wanna buy it!
 
