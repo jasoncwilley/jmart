@@ -1,0 +1,30 @@
+---
+layout: default
+permalink: /
+title: Home
+---
+
+<main id='index-page'>
+  <aside>
+    <h1 onclick="toggle('filters', 'show')">Filters</h1>
+    <div id='filters'>
+      <div id='search' data-field='"name"'></div>
+      <div id='sort'
+           data-fields="['price',]"
+           data-labels="['Price',]"></div>
+      <div id='type'
+           data-field='"type"'
+           data-tags="['Art', 'Jewelry', 'Misc']"></div>
+      <div id='condition'
+           data-field='"condition"'
+           data-tags="['New', 'Like New', 'Refurbished']"></div>
+      <div id='price-range'
+           data-field='"price"'
+           data-ranges="[[0, 20], [20, 40], [40, 75], [75, 500]]"
+           data-labels="['< $20', '$20 - $40', '$40 - $75', '> $75']"></div>
+
+    </div>
+  </aside>
+  <article id='display'></article>
+  <div id='pagination' data-pagesize='6'></div>
+</main>

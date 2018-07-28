@@ -1,0 +1,61 @@
+---
+layout: default
+---
+<main id='product-page'
+      itemscope
+      itemtype='http://schema.org/Product'
+      data-name='{{ page.name | escape }}'>
+  <header>
+    <h2 itemprop='name'>{{ page.name }}</h2>
+    <h3 itemprop='offers' itemscope itemtype='http://schema.org/Offer'>
+      <span itemprop='priceCurrency' content='USD'>$</span>
+      <span itemprop='price' content='{{ page.price }}'>{{ page.price }}</span>
+    </h3>
+  </header>
+  <div class='row'>
+    <h3>Description: {{ page.description }}</h3>
+
+    <aside>
+      <img src='{{ site.baseurl }}/images/{{ page.image }}'
+            alt='{{ page.name }}'
+            itemprop='image'/>
+      <table>
+        <tr>
+          <th>Price</th>
+          <td>{{ page.price }}</td>
+        </tr>
+        <tr>
+          <th>Type</th>
+          <td>{{ page.type }}</td>
+        </tr>
+        <tr>
+          <th>Condition</th>
+          <td itemprop='itemCondition'>{{ page.condition }}</td>
+        </tr>
+        <tr>
+          <th>Designer</th>
+          <td itemprop='itemCondition'>{{ page.designer }}</td>
+        </tr>
+        <tr>
+          <th>Additional Info</th>
+          <td itemprop='itemCondition'>{{ page.addinfo }}</td>
+        </tr>
+          </table>
+          <button class="snipcart-add-item"
+            data-item-name="{{ product.name }}"
+            data-item-id="{{ product.sku }}"
+            data-item-image="{{ product.image }}"
+            data-item-url="{{ site.baseurl }}"
+            data-item-price="{{ product.price }}">
+            BuyItNow
+       </button>
+    </aside>
+  </div>
+  <div id='visited' data-begin='1' data-end='4'></div>
+  <section class='yotpo yotpo-main-widget'
+    data-product-id='{{ page.slug }}'
+    data-name='{{ page.name }}'
+    data-url='{{ site.baseurl }}{{ page.slug }}'
+    data-image-url='{{ site.baseurl }}/images/{{ page.image }}'>
+  </section>
+</main>
